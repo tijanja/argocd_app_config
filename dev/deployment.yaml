@@ -15,4 +15,4 @@ spec:
           name: myapp
           image: tijanja/lexi_db:db
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
