@@ -9,6 +9,7 @@ spec:
   source:
     repoURL: https://github.com/tijanja/argocd_app_config.git
     targetRevision: HEAD
+    path: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app
