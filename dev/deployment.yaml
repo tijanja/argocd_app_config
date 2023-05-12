@@ -1,0 +1,18 @@
+apiVersion: app/v1
+kind: deployment
+metadata:
+  name: app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: myapp
+      replicas: 2
+      template:
+        metadata:
+          labels:
+            app: myapp
+        spec:
+          name: myapp
+          image: tijanja/lexi_db:db
+          ports:
+            - containerPort: 8080
